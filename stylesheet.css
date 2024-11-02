@@ -74,7 +74,9 @@
     text-decoration: none;
   }
   
-  body,
+  body {
+    background-color: #f2f2f2;
+  }
   td,
   th,
   tr,
@@ -154,3 +156,105 @@
     height: 100%;
     object-fit: contain;
   }
+
+  .recent-work {
+    height: 200px;
+    width: 900px;
+    padding-bottom: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 20px auto;  /* Centered margin */
+}
+
+.slider {
+    width: max-content;  /* This will adjust based on content */
+    display: flex;  /* Makes items align horizontally */
+}
+
+.slider a:hover {
+    border: none;
+    opacity: 0.9;  /* Subtle hover effect */
+}
+
+.slider video {
+    height: 205px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;  /* Maintains aspect ratio */
+}
+
+/* Custom scrollbar styling */
+.recent-work::-webkit-scrollbar {
+    background: none;
+    height: 8px;
+}
+
+.recent-work::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 4px;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.recent-work::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.recent-work::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.featured-work {
+  height: 100px;  /* Adjusted for logos */
+  width: 900px;
+  padding-bottom: 0px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 10px auto;
+}
+
+.articles-slider {
+  width: max-content;
+  display: flex;
+  align-items: center;  /* Centers logos vertically */
+}
+
+.articles-slider a:hover {
+  border: none;
+  opacity: 0.8;
+}
+
+.articles-slider img {
+  height: 50px;  /* Default height for logos */
+  margin-right: 40px;  /* More space between logos */
+  object-fit: contain;
+}
+
+/* Custom heights for specific logos */
+.articles-slider img.cnn-logo { height: 40px; }
+.articles-slider img.bbc-logo { height: 50px; }
+.articles-slider img.ieee-logo { height: 28px; }
+.articles-slider img.techcrunch-logo { height: 120px; }
+
+/* Custom scrollbar styling */
+.featured-work::-webkit-scrollbar {
+  background: none;
+  height: 8px;
+}
+
+.featured-work::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 4px;
+  margin-left: 240px;
+  margin-right: 240px;
+}
+
+.featured-work::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.featured-work::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
